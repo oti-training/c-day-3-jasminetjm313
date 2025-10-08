@@ -17,6 +17,18 @@
 #include <stdio.h>
 
 int main() {
+     float temp = 25.5f;
+     float *temp_ptr;
+     temp_ptr = &temp;
+     
+     printf("Original Value: %f , Address: %p\n" ,*temp_ptr, (void *)temp_ptr);
+     
+     *temp_ptr = 30.0f;	//Value in the address
+     
+     printf("New Value: %f , Address: %p\n" ,*temp_ptr, (void *)temp_ptr);
+	
+	
+	
     // TODO: Implement the exercise here
     // Hint: Remember to use & for addresses and * for dereferencing. Declare a float, point to it, print value and address, modify via pointer, print again.
 
