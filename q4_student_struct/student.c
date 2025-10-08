@@ -21,6 +21,12 @@
 #include <string.h>
 #include "student.h" 
 
+struct Student {
+	char name[20];
+	int grade;
+};
+
+
 void update_grade(Student *s, int new_grade) {
     // TODO: Implement to update the grade
   
@@ -33,7 +39,7 @@ int main() {
     printf("Exercise 4: Student Struct with Pointers\n");
 
     // TODO: Define Student struct here or in header
-     Student student;
+    Student student;
     // Student student;
   // Student *ptr = &student// pointer to student, Asign address of student to pointer 
    //ptr -> grade = 90; // you go to the address and write 
